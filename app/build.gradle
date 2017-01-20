@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'pms_release_key'
+            keyPassword 'pms@1234!'
+            storeFile file('D:/Pratik/Android/Ofc Pro/PMS/release_key/release_key.jks')
+            storePassword 'pms@123!'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.pms"
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 3
+        versionName "3"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile files('libs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar')
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.intuit.sdp:sdp-android:1.0.2'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:support-annotations:24.2.1'
+    compile 'com.google.android.gms:play-services:8.3.0'
+}

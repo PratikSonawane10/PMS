@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#616161</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="colorpink">#ff5555</color>
+    <color name="colorblue">#67c3ef</color>
+    <color name="coloryellow">#fabb3d</color>
+    <color name="colorgreen">#79c447</color>
+    <color name="colordark">#315fa5</color>
+    <color name="colorred">#4a1c1c</color>
+    <color name="colorBlack">#000000</color>
+    <color name="drawer_header_text">#EBEEF0</color>
+    <color name="list_internal_divider">#44d3d3d4</color>
+    <color name="notification_date_bg">#E0E0E0</color>
+    <color name="notification_city_bg">#00BCD4</color>
+    <color name="edittxtcolor">#616161</color>
+    <color name="btnsignuptext">#cf3e3e</color>
+    <color name="spinerbg">#EEEEEE</color>
+    <color name="red600">#E53935</color>
+    <color name="list_pet_origin_text_color">#000000</color>
+    <color name="textColor">#1A237E</color>
+    <color name="dividerLine">#9E9E9E</color>
+    <color name="statusRed">#C62828</color>
+    <color name="statusGreen">#2E7D32</color>
+    <color name="statusBlue">#0277BD</color>
+
+</resources>
+
+
+<!--
+
+<color name="colorPrimary">#283593</color>
+<color name="colorPrimaryDark">#1A237E</color>-->

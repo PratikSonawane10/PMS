@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_20sdp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:id="@+id/addSelfieLinearLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtAddSelfie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addSelfieImageView"
+                    android:text="Add Selfie"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:paddingTop="@dimen/_10sdp" />
+
+                <ImageButton
+                    android:id="@+id/addSelfieImageView"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/camera"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+<!-- 1st row 2nd image-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <ImageButton
+                    android:id="@+id/storeListImageView"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/storelist" />
+
+                <TextView
+                    android:id="@+id/txtStoreList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/storeListImageView"
+                    android:text=" StoreList "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="@dimen/_10sdp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+<!--2 row  -->
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/_10sdp">
+
+<!--2 row 1st image -->
+            <RelativeLayout
+                android:id="@+id/taskLinearLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/taskImageView"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/taskdone" />
+
+                <TextView
+                    android:id="@+id/txtDoneStoreList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/taskImageView"
+                    android:text="Todays Work"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:paddingTop="@dimen/_10sdp" />
+            </RelativeLayout>
+<!--2 row 2nd image -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/txtPerformance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/performanceImageView"
+                    android:text="My Performance "
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:paddingTop="@dimen/_10sdp"/>
+
+                <ImageButton
+                    android:id="@+id/performanceImageView"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/performance"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

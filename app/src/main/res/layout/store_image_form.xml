@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spinerbg">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:id="@+id/fieldLayout1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:text="SELFIE OUTSIDE THE SHOP WITH  STORE NAME BOARD"
+                    android:id="@+id/image1textview"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:text="Upload Photo"
+                    android:background="#fe3a3a"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/btnImage1"
+                    android:layout_below="@+id/image1textview"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnImage1"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:id="@+id/image1Layout">
+
+                    <ImageView
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:id="@+id/firstImage"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_below="@+id/fieldLayout1"
+                android:id="@+id/fieldLayout2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:text="DISPLAY SHELF"
+                    android:id="@+id/image2textview"/>
+
+                <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:text="Upload Photo"
+                    android:background="#fe3a3a"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/btnImage2"
+                    android:layout_below="@+id/image2textview"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnImage2"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:id="@+id/image2Layout">
+                    <ImageView
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:id="@+id/secondImage"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter" />
+                    </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_below="@+id/fieldLayout2"
+                android:id="@+id/fieldLayout3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:text="IMAGE OF SOAP CATEGORY (ALL SOAPS)"
+                    android:id="@+id/image3textview"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:text="Upload Photo"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="#fe3a3a"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/btnImage3"
+                    android:layout_below="@+id/image3textview"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnImage3"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:id="@+id/image3Layout">
+                    <ImageView
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:id="@+id/thirdImage"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter" />
+                    </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_below="@+id/fieldLayout3"
+                android:id="@+id/fieldLayout4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:text="NON SANTOOR SOAP CATEGORY(PIC 1)"
+                    android:id="@+id/image4textview"/>
+
+                <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:text="Upload Photo"
+                    android:background="#fe3a3a"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:id="@+id/btnImage4"
+                    android:layout_below="@+id/image4textview"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnImage4"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:id="@+id/image4Layout">
+                    <ImageView
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:id="@+id/fourthImage"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter" />
+                    </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_below="@+id/fieldLayout4"
+                android:id="@+id/fieldLayout5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:text="NON SANTOOR SOAP CATEGORY(PIC 2)"
+                    android:id="@+id/image5textview"/>
+
+                <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:text="Upload Photo"
+                    android:background="#fe3a3a"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/btnImage5"
+                    android:layout_below="@+id/image5textview"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnImage5"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:id="@+id/image5Layout">
+                    <ImageView
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:id="@+id/fifthImage"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter" />
+                    </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSubmitStore_Image_Form"
+                android:text="Submit"
+                android:layout_margin="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/fieldLayout5"
+                android:textSize="@dimen/_16sdp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

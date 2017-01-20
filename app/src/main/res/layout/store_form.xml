@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spinerbg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/storeDetailRelativeLayout"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                <!--android:layout_marginRight="@dimen/_5sdp"-->
+                <!--android:layout_marginTop="@dimen/_10sdp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/txtShopOpen"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="@dimen/_10sdp"-->
+                    <!--android:text="Shop Open"-->
+                    <!--android:textSize="@dimen/_16sdp" />-->
+
+                <!--<Switch-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:padding="@dimen/_10sdp"-->
+                    <!--android:layout_marginRight="21dp"-->
+                    <!--android:layout_marginEnd="21dp"-->
+                    <!--android:id="@+id/switchShopOpen"/>-->
+            <!--</RelativeLayout>-->
+            <!--1st Part-->
+            <RelativeLayout
+                android:id="@+id/allfieldsRelativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:id="@+id/formPart1RelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/txtMarchandizing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Marchandizing"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <ImageView
+                        android:id="@+id/imgMarchandizingArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/chevron_down1" />
+                </RelativeLayout>
+                <!-- content Of 1st Form  -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/marchandizingeRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/formPart1RelativeLayout"
+                    android:layout_margin="@dimen/_10sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/txtWindowMarchandizing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Window Marchandizing"
+                            android:textSize="@dimen/_16sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toLeftOf="@+id/switchWindowMarchandizing" />
+
+                        <Switch
+                            android:id="@+id/switchWindowMarchandizing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:padding="@dimen/_10sdp"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/danglers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtWindowMarchandizing"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <EditText
+                                android:id="@+id/txtDanglers"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="No Of Danglers"
+                                android:inputType="number"
+                                android:padding="@dimen/_10sdp"
+                                android:textSize="@dimen/_16sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/posters"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/danglers"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <EditText
+                                android:id="@+id/txtPosters"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="No Of Posters"
+                                android:inputType="number"
+                                android:padding="@dimen/_10sdp"
+                                android:textSize="@dimen/_16sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/banners"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/posters"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <EditText
+                                android:id="@+id/txtBanners"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="No Of Banners"
+                                android:inputType="number"
+                                android:padding="@dimen/_10sdp"
+                                android:textSize="@dimen/_16sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/anyOther"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/banners"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <EditText
+                                android:id="@+id/txtAnyOther"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Any Other"
+                                android:inputType="text"
+                                android:padding="@dimen/_10sdp"
+                                android:textSize="@dimen/_16sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/windowShelfSpaceLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/anyOther">
+
+                            <Switch
+                                android:id="@+id/switchWindowShelfSpace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:padding="@dimen/_10sdp"
+                                android:text="YES"/>
+
+                            <TextView
+                                android:id="@+id/txtWindowShelfSpace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:text="Window Shelf Space Atleast 6 SQFT?"
+                                android:textSize="@dimen/_16sdp"
+                                android:layout_alignParentTop="true"
+                                android:layout_toStartOf="@+id/switchWindowShelfSpace"
+                                android:layout_marginEnd="11dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/facingsInCategoryLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/windowShelfSpaceLayout">
+
+                            <TextView
+                                android:id="@+id/txtFacingsInCategory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_10sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_toLeftOf="@+id/switchFacingsInCategory"
+                                android:text="4 Facings In Category Shelf"
+                                android:textSize="@dimen/_16sdp" />
+
+                            <Switch
+                                android:id="@+id/switchFacingsInCategory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:padding="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_8sdp"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <!--2nd Part-->
+
+                <RelativeLayout
+                    android:id="@+id/formPart2RelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/marchandizingeRelativeLayout"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/txtStockInPeices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Stock (in Peices)"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <ImageView
+                        android:id="@+id/imgStockInPeicesArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/chevron_down1" />
+                </RelativeLayout>
+                <!-- content Of 2nd Form  -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/stockRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/formPart2RelativeLayout"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/str"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <EditText
+                                android:id="@+id/txtStr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="STR125GX4"
+                                android:inputType="number"
+                                android:padding="@dimen/_10sdp"
+                                android:textSize="@dimen/_16sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/stw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/str"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <EditText
+                                android:id="@+id/txtStw"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="STW"
+                                android:inputType="number"
+                                android:padding="@dimen/_10sdp"
+                                android:textSize="@dimen/_16sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/stg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/stw"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <EditText
+                                android:id="@+id/txtStg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="STG"
+                                android:inputType="number"
+                                android:padding="@dimen/_10sdp"
+                                android:textSize="@dimen/_16sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/shw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/stg"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <EditText
+                                android:id="@+id/txtShw"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="SHW"
+                                android:inputType="number"
+                                android:padding="@dimen/_10sdp"
+                                android:textSize="@dimen/_16sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/chandrika"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/shw"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <EditText
+                                android:id="@+id/txtChandrika"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Chandrika"
+                                android:inputType="number"
+                                android:padding="@dimen/_10sdp"
+                                android:textSize="@dimen/_16sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/led"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/chandrika"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <EditText
+                                android:id="@+id/txtLed"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="LED"
+                                android:inputType="number"
+                                android:padding="@dimen/_10sdp"
+                                android:textSize="@dimen/_16sdp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <!--3rd Part-->
+                <RelativeLayout
+                    android:id="@+id/formPart3RelativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stockRelativeLayout"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/txtFeedback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Feedback"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <ImageView
+                        android:id="@+id/imgFeedbackrrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/chevron_down1" />
+                </RelativeLayout>
+                <!-- content Of 3rd Form  -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/feedbackRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/formPart3RelativeLayout"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/issueOfHighLight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <EditText
+                                android:id="@+id/txtIssueOfHighLight"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Issue Of HighLight"
+                                android:inputType="text"
+                                android:padding="@dimen/_10sdp"
+                                android:textSize="@dimen/_16sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/exitWithoutExecution"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/issueOfHighLight"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <EditText
+                                android:id="@+id/txtExitWithoutExecution"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Exit Without Execution Approved By"
+                                android:inputType="text"
+                                android:padding="@dimen/_10sdp"
+                                android:textSize="@dimen/_16sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/reasonForNonCooperation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/exitWithoutExecution"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <EditText
+                                android:id="@+id/txtReasonForNonCooperation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Reason For Non Cooperation Of Outlet"
+                                android:inputType="text"
+                                android:padding="@dimen/_10sdp"
+                                android:textSize="@dimen/_16sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/workedWithStarSalesman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/reasonForNonCooperation">
+
+                            <TextView
+                                android:id="@+id/txtWorkedWithStarSalesman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_10sdp"
+                                android:layout_toLeftOf="@+id/switchWorkedWithStarSalesman"
+                                android:text="WorkedWithStarSalesman"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="@dimen/_16sdp" />
+
+                            <Switch
+                                android:id="@+id/switchWorkedWithStarSalesman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:padding="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_8sdp"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/allfieldsRelativeLayout"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Submit"
+                android:textSize="@dimen/_16sdp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

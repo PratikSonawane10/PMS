@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incentives Earned"
+        android:textSize="@dimen/_16sdp"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/colorBlack"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        card_view:cardCornerRadius="@dimen/_2sdp"
+        card_view:cardElevation="@dimen/_2sdp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainRelativeLayout">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/monthRelativeLayout"
+                android:background="#616161" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nov-2016"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/month"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/workingDaysInMonthLayout"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_below="@+id/monthRelativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Incentive Amount INR:"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/IncentiveLabel"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26"
+                    android:layout_toRightOf="@+id/IncentiveLabel"
+                    android:textSize="@dimen/_14sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:id="@+id/Incentive"
+                    android:textColor="@color/colorBlack" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
